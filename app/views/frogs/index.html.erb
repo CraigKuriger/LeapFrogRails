@@ -1,0 +1,18 @@
+<p id="notice"><%= notice %></p>
+
+<% @frogs.each do |frog| %>
+
+  <div class="featurette featurette<%= frog.id %>" id="about">
+    <img class="featurette-image img-responsive featurette-image<%= frog.id %>" src="<%= frog.image_url %>">
+    <h2 class="featurette-heading text-center">
+      <a><%= frog.name %></a>
+      <span class="text-muted"><%= frog.heading %></span>
+    </h2>
+      <% frog.worms.each do |worm| %>
+        <p class="lead text-center"><%= worm.title %></p>
+      <% end %>
+  </div>
+
+<% end %>
+
+<hr class="featurette-divider">

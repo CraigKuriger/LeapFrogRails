@@ -1,0 +1,19 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Title:</strong>
+  <%= @worm.title %>
+</p>
+
+<p>
+  <strong>Amount:</strong>
+  <%= @worm.amount %>
+</p>
+
+<p>
+  <strong>Frog:</strong>
+  <%= @worm.frog %>
+</p>
+
+<%= link_to 'Edit', edit_worm_path(@worm) %> |
+<%= link_to 'Back', worms_path %>
